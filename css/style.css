@@ -1,0 +1,178 @@
+@font-face {
+  font-family: 'vazirmatn';
+  src: url('../fonts/Vazirmatn-VariableFont_wght.ttf');
+  format('truetype')
+}
+
+/* --- استایل‌های کلی --- */
+body {
+  font-family: 'vazirmatn', sans-serif;
+  background-color: rgb(139, 66, 71);
+  color: #333333;
+  direction: rtl;
+  margin: 0; /* ریست کردن مارجین پیش‌فرض */
+  padding: 0;
+}
+
+/* --- استایل‌دهی به بخش‌های اصلی --- */
+main {
+  max-width: 900px;
+  /* خلاصه‌نویسی: بالا و پایین 30px، چپ و راست اتوماتیک (برای وسط‌چین شدن) */
+  margin: 30px auto;
+}
+
+.site-header-footer {
+  background-color: rgb(102, 48, 48);
+  color: rgb(40, 170, 51);
+  text-align: center;
+  /* خلاصه‌نویسی: بالا و پایین 25px، چپ و راست 0 */
+  padding: 25px 0;
+}
+
+/* --- استایل‌دهی به عناصر داخلی --- */
+#main-title {
+  font-size: 36px;
+}
+
+.image-section {
+  text-align: center;
+  margin-bottom: 30px; /* فقط فاصله از پایین */
+}
+
+img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border-radius: 10px;
+}
+
+hr {
+  border: 1px solid #e6e6e6;
+  margin: 40px 0; /* فاصله از بالا و پایین */
+}
+
+.features-section {
+  background-color: #e0d3d3;
+  border: 20px solid #704747;
+  border-radius: 8px;
+  /* خلاصه‌نویسی: بالا و پایین 20px، چپ و راست 30px */
+  padding: 20px 30px;
+}
+
+h2, h3 {
+  color: #74706d;
+  margin-bottom: 15px;
+}
+
+/* استایل‌دهی به لینک جدید */
+a {
+    color: #9900ff;
+    text-decoration: none; /* حذف خط زیر لینک */
+}
+
+a:hover {
+    color: aqua;
+    text-decoration: underline; /* وقتی ماوس روی لینک رفت، خط زیر ظاهر شود */
+}
+
+nav ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: top;
+  gap: 30px;
+}
+
+nav a{
+  color: #eeeeee;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+nav a:hover{
+  color: #98ffff;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+body.dark-mode {
+  font-family: sans-serif;
+  background-color: #66696b;
+  color: #333333;
+  direction: rtl;
+  margin: 0; /* ریست کردن مارجین پیش‌فرض */
+  padding: 0;
+}
+
+
+
+body.dark-mode .site-header-footer {
+  background-color: rgb(44, 44, 44);
+  color: white;
+  text-align: center;
+  /* خلاصه‌نویسی: بالا و پایین 25px، چپ و راست 0 */
+  padding: 25px 0;
+}
+
+/* --- استایل‌دهی به عناصر داخلی --- */
+#main-title {
+  font-size: 36px;
+}
+
+
+body.dark-mode hr {
+  border: 1px solid #3a3636;
+  margin: 40px 0; /* فاصله از بالا و پایین */
+}
+
+body.dark-mode .features-section {
+  background-color: #000000;
+  border: 20px solid #3b2727;
+  border-radius: 8px;
+  /* خلاصه‌نویسی: بالا و پایین 20px، چپ و راست 30px */
+  padding: 20px 30px;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.gallery-grid img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 30px;
+}
+.contact-form {
+  background-color: #e0d3d3;
+  padding: 10px;
+  margin: 20px;
+  border: 5px solid #00d9ff;
+  border-radius: 20px;
+}
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+.contact-form input, .contact-form textarea {
+  width: 95%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+.contact-form input:focus, .contact-form textarea:focus{
+  background-color: #66696b;
+  border: 5px solid #98ffff;
+  outline: none;
+}
+.contact-form button{
+  background-color: cadetblue;
+  width: 100%;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 5px;
+}
+.error-text {
+  color: red;
+}
